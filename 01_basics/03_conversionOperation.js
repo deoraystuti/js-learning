@@ -37,3 +37,52 @@ console.log(stringNumber, typeof stringNumber);
 // Boolean() method converts values to boolean
 // toString() method also converts number to string
 
+console.log(+true);
+console.log(+"");
+console.log(+"123abc");
+console.log(+"123");
+console.log(+"0");
+console.log(+"-123");
+console.log(+"-123.45");
+console.log(+"0.0001");
+console.log(+"100000000000000000000");
+console.log(+"100000000000000000000n"); // BigInt is not supported
+console.log(+"Infinity");
+console.log(+"-Infinity");
+console.log(+"NaN");
+console.log(+null);
+console.log(+undefined);
+console.log(+false);
+console.log(+{});
+console.log(+[]);
+console.log(+[1, 2, 3]);
+console.log(+[123]);
+console.log(+function () {});
+console.log(+Symbol("123")); // Symbol cannot be converted to number
+console.log(+BigInt(123)); // BigInt is not supported   
+console.log(+BigInt("123456789012345678901234567890")); // BigInt is not supported
+// + operator before a value converts it to number
+// BigInt is not supported with Number() or + operator  
+// Symbol cannot be converted to number
+// {} (object) is converted to NaN
+// [] (empty array) is converted to 0
+// [single value] is converted to that value
+// [multiple values] is converted to NaN
+// function is converted to NaN
+// BigInt is a special type in JavaScript to represent whole numbers larger than 2^53 - 1
+// BigInt literals are created by appending n to the end of an integer or by calling
+// the BigInt() constructor
+// BigInt cannot be used with Number() or + operator for conversion
+// Symbol is a unique and immutable primitive value and cannot be converted to number
+// Symbol is created using the Symbol() function
+// BigInt and Symbol are not covered in detail here as they are more advanced topics
+// and are not commonly used in basic JavaScript programming
+// They are included here for completeness regarding type conversion
+// For most practical purposes, you will primarily deal with Number, String, Boolean,
+// null, undefined, Object, and Array types in JavaScript
+// Understanding these basic types and their conversions is essential for effective
+// JavaScript programming
+// Always be cautious when converting types, especially with user input or external data
+// as unexpected types can lead to bugs or security vulnerabilities in your code    
+
+
